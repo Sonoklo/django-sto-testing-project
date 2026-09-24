@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Dashboard</h2>
+
+<p>{{ request.user.first_name }}</p>
+
+<ul>
+    <li><a href="{% url 'cars_temp' %}">Cars</a></li>
+    <li><a href="{% url 'appointment_add' %}">Book service</a></li>
+    <li><a href="{% url 'appointments_temp' %}">Appointments</a></li>
+</ul>
+
+{% endblock %}

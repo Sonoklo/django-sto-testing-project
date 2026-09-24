@@ -1,0 +1,6 @@
+django>=4.2
+djangorestframework>=3.14
+factory-boy>=3.3
+coverage>=7.0
+djangorestframework
+djangorestframework-simplejwt

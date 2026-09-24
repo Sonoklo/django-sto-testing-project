@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Appointment Details</h2>
+
+<div>
+    <p><strong>Date:</strong> {{ appointment.date }}</p>
+    <p><strong>Status:</strong> {{ appointment.status }}</p>
+    <p><strong>Car:</strong> {{ appointment.car.make }} {{ appointment.car.model }} ({{ appointment.car.license_plate }})</p>
+    <p><strong>Master:</strong> {{ appointment.master.first_name }} {{ appointment.master.last_name }}</p>
+    <p><strong>Description:</strong> {{ appointment.description }}</p>
+</div>
+
+    <h3>Service Record</h3>
+
+    <div>
+        <p><strong>Work done:</strong> {{ appointment.servicerecord.work_done }}</p>
+        <p><strong>Parts used:</strong> {{ appointment.servicerecord.parts_used }}</p>
+        <p><strong>Total cost:</strong> {{ appointment.servicerecord.total_cost }}</p>
+        <p><strong>Completed at:</strong> {{ appointment.servicerecord.completed_at }}</p>
+    </div>
+    
+{% endblock %}

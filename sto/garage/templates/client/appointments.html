@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Appointments</h2>
+
+{% for appointment in appointments %}
+<div>
+    <p><strong>Date:</strong>{{ appointment.date }}</p>
+
+    <p><strong>Car:</strong>{{ appointment.car }}</p>
+
+    <p><strong>Master:</strong>{{ appointment.master.first_name }}{{ appointment.master.last_name }}</p>
+
+    <p><strong>Status:</strong>{{ appointment.status }}</p>
+</div>
+{% endfor %}
+{% endblock %}

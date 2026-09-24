@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <hr>
+
+        <a href="{% url 'dashboard' %}">Dashboard</a> 
+        <a href="{% url 'cars_temp' %}">Cars</a> 
+        <a href="{% url 'appointments_temp' %}">Appointments</a> 
+        <a href="{% url 'appointment_add' %}">New appointment</a> 
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
